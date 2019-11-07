@@ -8,12 +8,12 @@ class Cliente {
     public function __construct() {}
     public function __destruct() {}
 
-    public function get($atrib) {
+    public function __get($atrib) {
         return $this->atrib;
     }
 
     public function __set($atrib, $value) {
-        $this->$atrib = $value;
+        $this->atrib = $value;
     }
 
     public function __toString() {
